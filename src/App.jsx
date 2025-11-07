@@ -50,7 +50,7 @@ export default function App() {
               // if not valid JSON, keep as plain string
               newItem = raw;
             }
-            setTodos((prev) => [...prev, newItem]);
+            setTodos((prevTodo) => [...prevTodo, newItem]);
             input.value = "";
           }}
         >
