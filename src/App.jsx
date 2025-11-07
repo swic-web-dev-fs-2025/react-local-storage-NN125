@@ -43,7 +43,20 @@ export default function App() {
       <div className="card">
         <button
           onClick={() => {
-            //setTodos((prevCount) => prevCount + 1);
+            const input = document.getElementById("newTask");
+            if (!input) return;
+            const raw = input.value.trim();
+            if (!raw) return;
+            let newItem = "";
+            try {
+              // try to parse JSON input (arrays, objects, numbers, booleans, etc.)
+              newItem = JSON.parse(raw);
+            } catch {
+              // if not valid JSON, keep as plain string
+              newItem = raw;
+            }
+            setTodos((prev) => [...prev, newItem]);
+            input.value = "";
           }}
         >
           Add New Task
