@@ -24,6 +24,15 @@ export default function App() {
       </div>
       <h1>React Todo List</h1>
       <div className="card">
+        <h2>Your Tasks:</h2>
+        {todos.length === 0 && "No tasks yet!"}
+        <ul>
+          {todos.map((todo, index) => (
+            <li key={index}>{typeof todo === "object" ? JSON.stringify(todo) : String(todo)}</li>
+          ))}
+        </ul>
+      </div>
+      <div className="card">
         <input
           id="newTask"
           type="text"
