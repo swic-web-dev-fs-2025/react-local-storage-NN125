@@ -6,9 +6,6 @@ import reactLogo from "./assets/react.svg";
 
 export default function App() {
   const [todos, setTodos] = useLocalStorage("todos", []);
-  // Same API, same benefit, better error handling
-
-  // Rest of your component...
 
   return (
     <>
