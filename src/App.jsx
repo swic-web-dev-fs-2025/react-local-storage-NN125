@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useLocalStorage } from "@uidotdev/usehooks";
+//import { useState } from "react";
 
 import "./App.css";
 import reactLogo from "./assets/react.svg";
@@ -6,8 +7,10 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 
 export default function App() {
-  // Array destructuring assignment
-  const [count, setCount] = useState(0);
+  const [todos, setTodos] = useLocalStorage("todos", []);
+  // Same API, same benefit, better error handling
+
+  // Rest of your component...
 
   return (
     <>
@@ -23,10 +26,10 @@ export default function App() {
       <div className="card">
         <button
           onClick={() => {
-            setCount((prevCount) => prevCount + 1);
+            //setTodos((prevCount) => prevCount + 1);
           }}
         >
-          count is {count}
+          Add New Task
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
