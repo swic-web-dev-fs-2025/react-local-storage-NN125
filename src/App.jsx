@@ -24,6 +24,14 @@ export default function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
+        <input
+          id="newTask"
+          type="text"
+          placeholder="Type new task here..."
+          className="mb-4 w-full rounded border border-gray-300 px-3 py-2"
+        />
+      </div>
+      <div className="card">
         <button
           onClick={() => {
             //setTodos((prevCount) => prevCount + 1);
