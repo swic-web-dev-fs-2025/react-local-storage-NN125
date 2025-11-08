@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import { useLocalStorage } from "./useLocalStorage";
 
 export default function App() {
-  const [todos, setTodos] = useLocalStorage("todos", []);
+  const [tasks, setTasks] = useLocalStorage("tasks", []);
 
   return (
     <>
@@ -15,10 +15,10 @@ export default function App() {
       <h1>React Todo List</h1>
       <div className="card">
         <h2>Your Tasks:</h2>
-        {todos.length === 0 && "No tasks yet!"}
+        {tasks.length === 0 && "No tasks yet!"}
         <ul>
-          {todos.map((newTodo, index) => (
-            <li key={index}>{typeof newTodo === "object" ? JSON.stringify(newTodo) : String(newTodo)}</li>
+          {tasks.map((newTask, index) => (
+            <li key={index}>{typeof newTask === "object" ? JSON.stringify(newTask) : String(newTask)}</li>
           ))}
         </ul>
       </div>
@@ -45,7 +45,7 @@ export default function App() {
               // if not valid JSON, keep as plain string
               newItem = inputTrimmed;
             }
-            setTodos((prevTodo) => [...prevTodo, newItem]);
+            setTasks((prevTasks) => [...prevTasks, newItem]);
             input.value = "";
           }}
         >
