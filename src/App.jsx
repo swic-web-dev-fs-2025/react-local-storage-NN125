@@ -1,8 +1,6 @@
-import { useLocalStorage } from "@uidotdev/usehooks";
-//import { useState } from "react";
-
 import "./App.css";
 import reactLogo from "./assets/react.svg";
+import { useLocalStorage } from "./useLocalStorage";
 
 export default function App() {
   const [todos, setTodos] = useLocalStorage("todos", []);
