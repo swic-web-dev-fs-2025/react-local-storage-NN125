@@ -9,6 +9,13 @@ const [buttonStates, setButtonStates] = useState({
   button2: false,
   button3: false
 });
+
+const handleButtonClick = (buttonName) => {
+  setButtonStates(prev => ({
+    ...prev,
+    [buttonName]: true
+  }));
+};
   return (
     <>
       <h1>Button State</h1>
