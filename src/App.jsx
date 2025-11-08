@@ -19,8 +19,8 @@ export default function App() {
         <h2>Your Tasks:</h2>
         {todos.length === 0 && "No tasks yet!"}
         <ul>
-          {todos.map((todo, index) => (
-            <li key={index}>{typeof todo === "object" ? JSON.stringify(todo) : String(todo)}</li>
+          {todos.map((newTodo, index) => (
+            <li key={index}>{JSON.stringify(newTodo)}</li>
           ))}
         </ul>
       </div>
