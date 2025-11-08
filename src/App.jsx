@@ -37,15 +37,15 @@ export default function App() {
           onClick={() => {
             const input = document.getElementById("newTask");
             if (!input) return;
-            const raw = input.value.trim();
-            if (!raw) return;
+            const inputTrimmed = input.value.trim();
+            if (!inputTrimmed) return;
             let newItem = "";
             try {
               // try to parse JSON input (arrays, objects, numbers, booleans, etc.)
-              newItem = JSON.parse(raw);
+              newItem = JSON.parse(inputTrimmed);
             } catch {
               // if not valid JSON, keep as plain string
-              newItem = raw;
+              newItem = inputTrimmed;
             }
             setTodos((prevTodo) => [...prevTodo, newItem]);
             input.value = "";
