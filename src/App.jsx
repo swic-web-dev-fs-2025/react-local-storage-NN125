@@ -6,7 +6,13 @@ export default function App() {
 const [buttonStates, setButtonStates] = useLocalStorage("buttonStates", {
   button1: false,
   button2: false,
-  button3: false
+  button3: false,
+  button4: false,
+  button5: false,
+  button6: false,
+  button7: false,
+  button8: false,
+  button9: false,
 });
 
 const handleButtonClick = (buttonName) => {
