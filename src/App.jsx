@@ -13,6 +13,13 @@ const [buttonStates, setButtonStates] = useLocalStorage("buttonStates", {
   button7: false,
   button8: false,
   button9: false,
+  button10: false,
+  button11: false,
+  button12: false,
+  button13: false,
+  button14: false,
+  button15: false,
+  button16: false,
 });
 
 const handleButtonClick = (buttonName) => {
