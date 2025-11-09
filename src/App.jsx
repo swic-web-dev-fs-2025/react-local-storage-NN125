@@ -19,12 +19,15 @@ const handleButtonClick = (buttonName) => {
     <>
       <h1>Button State</h1>
       <div className="card">
+        <div>
         <button
           onClick={() => {
-
+            handleButtonClick("button1");
           }}
         >
+          {buttonStates.button1 ? "Clicked" : "Click me"}
         </button>
+        </div>
       </div>
     </>
   );
