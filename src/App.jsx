@@ -30,7 +30,9 @@ const handleButtonClick = (buttonName) => {
 };
   return (
     <>
-      <h1>Button State</h1>
+      <h1>Button Color Changer</h1>
+      <h2>Click the buttons to change their color!</h2>
+      <p>The buttons' colors will stay upon refresh.</p>
       <div className="card">
         {/* First row of buttons */}
         <div>
