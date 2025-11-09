@@ -32,6 +32,7 @@ const handleButtonClick = (buttonName) => {
     <>
       <h1>Button State</h1>
       <div className="card">
+        {/* First row of buttons */}
         <div>
         <button
           onClick={() => {
@@ -66,6 +67,7 @@ const handleButtonClick = (buttonName) => {
         >
         </button>
         </div>
+        {/* Second row of buttons */}
         <div>
         <button
           onClick={() => {
