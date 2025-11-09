@@ -1,5 +1,4 @@
-import { useState } from "react";
-
+import { useLocalStorage } from "./useLocalStorage";
 import "./App.css";
 
 export default function App() {
