@@ -30,8 +30,8 @@ const handleButtonClick = (buttonName) => {
           onClick={() => {
             handleButtonClick("button1");
           }}
+          className={"btn " + (buttonStates.button1 ? "btn-on" : "btn-off")}
         >
-          {buttonStates.button1 ? "Clicked" : "Click me"}
         </button>
         </div>
       </div>
