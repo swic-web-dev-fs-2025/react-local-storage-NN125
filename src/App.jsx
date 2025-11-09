@@ -102,6 +102,41 @@ const handleButtonClick = (buttonName) => {
         >
         </button>
         </div>
+        {/* Third row of buttons */}
+        <div>
+        <button
+          onClick={() => {
+            handleButtonClick("button9");
+          }}
+          className={"btn " + (buttonStates.button9 ? "btn-on" : "btn-off")}
+          style={{ margin: "5px" }}
+        >
+        </button>
+        <button
+          onClick={() => {
+            handleButtonClick("button10");
+          }}
+          className={"btn " + (buttonStates.button10 ? "btn-on" : "btn-off")}
+          style={{ margin: "5px" }}
+        >
+        </button>
+        <button
+          onClick={() => {
+            handleButtonClick("button11");
+          }}
+          className={"btn " + (buttonStates.button11 ? "btn-on" : "btn-off")}
+          style={{ margin: "5px" }}
+        >
+        </button>
+        <button
+          onClick={() => {
+            handleButtonClick("button12");
+          }}
+          className={"btn " + (buttonStates.button12 ? "btn-on" : "btn-off")}
+          style={{ margin: "5px" }}
+        >
+        </button>
+        </div>
       </div>
     </>
   );
