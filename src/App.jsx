@@ -31,6 +31,7 @@ const handleButtonClick = (buttonName) => {
             handleButtonClick("button1");
           }}
           className={"btn " + (buttonStates.button1 ? "btn-on" : "btn-off")}
+          style={{ margin: "5px" }}
         >
         </button>
         <button
@@ -38,6 +39,7 @@ const handleButtonClick = (buttonName) => {
             handleButtonClick("button2");
           }}
           className={"btn " + (buttonStates.button2 ? "btn-on" : "btn-off")}
+          style={{ margin: "5px" }}
         >
         </button>
         <button
@@ -45,6 +47,7 @@ const handleButtonClick = (buttonName) => {
             handleButtonClick("button3");
           }}
           className={"btn " + (buttonStates.button3 ? "btn-on" : "btn-off")}
+          style={{ margin: "5px" }}
         >
         </button>
         </div>
