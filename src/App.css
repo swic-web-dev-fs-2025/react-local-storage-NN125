@@ -40,3 +40,28 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Button state styles (because Tailwind is refusing to work for some reason) */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: background-color 160ms ease, transform 120ms ease;
+}
+.btn:active { transform: translateY(1px); }
+.btn-on {
+  background-color: #16a34a; /* green-600 */
+}
+.btn-on:hover {
+  background-color: #15803d; /* green-700 */
+}
+.btn-off {
+  background-color: #dc2626; /* red-600 */
+}
+.btn-off:hover {
+  background-color: #b91c1c; /* red-700 */
+}
