@@ -44,11 +44,11 @@
 /* Button state styles (because Tailwind is refusing to work for some reason) */
 .btn {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 2rem 2rem;
   border-radius: 6px;
   font-weight: 600;
   color: white;
-  border: 1px solid rgba(0,0,0,0.08);
+  border: 0.5px solid rgba(0,0,0,0.08);
   cursor: pointer;
   transition: background-color 160ms ease, transform 120ms ease;
 }
