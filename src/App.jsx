@@ -30,6 +30,7 @@ const handleButtonClick = (buttonName) => {
 };
   return (
     <>
+      <main className="app-background">
       <h1>Button Color Changer</h1>
       <h2>Click the buttons to change their color!</h2>
       <p>The buttons' colors will stay upon refresh.</p>
@@ -175,6 +176,7 @@ const handleButtonClick = (buttonName) => {
         </button>
         </div>
       </div>
+      </main>
     </>
   );
 }
