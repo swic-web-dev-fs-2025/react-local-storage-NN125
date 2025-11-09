@@ -10,9 +10,9 @@ const [buttonStates, setButtonStates] = useLocalStorage("buttonStates", {
 });
 
 const handleButtonClick = (buttonName) => {
-  setButtonStates(prev => ({
-    ...prev,
-    [buttonName]: true
+  setButtonStates(prevState => ({
+    ...prevState,
+    [buttonName]: !prevState[buttonName]
   }));
 };
   return (
