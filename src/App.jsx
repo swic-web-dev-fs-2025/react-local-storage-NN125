@@ -4,7 +4,7 @@ import "./App.css";
 
 export default function App() {
 
-const [buttonStates, setButtonStates] = useState({
+const [buttonStates, setButtonStates] = useLocalStorage("buttonStates", {
   button1: false,
   button2: false,
   button3: false
