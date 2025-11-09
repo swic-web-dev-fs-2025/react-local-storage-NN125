@@ -64,3 +64,5 @@ Another "fun" thing I dealt with was that Tailwind was just not working at all f
 The last challenge I dealt with was dark mode. The css stylings that came with the repo already had some things set up with it, which made the white text invisible on the white play field. So with the help of Copilot, I made it so the play field would have a dark background color in dark mode. Not only did it make the text readable again, but I also preferred how the stylings looked on there compared to light mode.
 
 Working on this app, while a bit challenging and frustrating at points, was a fun little throwback for me. Making an old Tailwind playground app an actual React app feels rewarding in a way.
+
+The app can be seen on the [`button-state`](https://github.com/swic-web-dev-fs-2025/react-local-storage-NN125/tree/button-state) branch of this repo.
