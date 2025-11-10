@@ -1,13 +1,10 @@
+import { useLocalStorage } from "./useLocalStorage";
+
 export default function App() {
   const [tasks, setTasks] = useLocalStorage("tasks", []);
 
   return (
     <>
-      <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
       <h1>React Todo List</h1>
       <div className="card">
         <h2>Your Tasks:</h2>
