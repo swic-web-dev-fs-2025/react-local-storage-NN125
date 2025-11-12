@@ -19,3 +19,15 @@ First it went over the starting code where there was a lot of repetition. To cut
 With all that in mind, we can use that to make a hook to handle `localStorage` for us, which is great. Reusable hooks/components is always a plus in my book. There is also a pre-made one we can install with `npm`, and I originally used it, but I went back to the in-class hook for my own learning benefit.
 
 All in all, this was a good reinforcement of `useEffect` and that we should only use it for specific purposes.
+
+### Todo Solution
+
+The result that I ended up with is very similar to the "official solution" to the assignment. With that said there are a few notable differences. The first one is the fact that the official solution uses `uihookdev`'s `useLocalStorage`. I did use it at first, but I switched to the in-class one. I will say that `uihookdev`'s version is miles better.
+
+Another difference is how the app is styled. Both are relatively basic, but the official solution went for a darker look while I went for a lighter look. We both use unordered lists, but I had dots next to each task, while the official solution had a line in-between each todo. I also noticed that the tasks in the official solution stores not just what you typed in, but also an id.
+
+Speaking of the tasks, they are inputted in using a text bar (or `<input>` tag). In mine, it was just a simple one, with an id of `newTask`. The official solution has `todo-input` for its id, and it is a much better name than what I came up with. The official version also has an [`aria-label`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-label), something I haven't mentioned in a bit. The input tag on the official solution uses an `onBlur` prop, which gets triggered when you click away from it, like say, clicking a button. The code attached is shorter than how my `onClick` turned out, since that handled the text inside, and made it a new todo. Matter of fact, the official solution doesn't even have an `onClick`. `onBlur` in this case is a different route to the same destination. In short, I think the code contents of the official version's `onBlur` looks a lot cleaner and shorter than how I did it.
+
+As for how we handled adding the things to an unordered list, we ended up doing relatively the same. We both use an `index`, which is needed for dynamically added things to prevent React from acting up. As for me though, I had a ternary statement that converted most non-strings to strings using `JSON.stringify`, which looking back I didn't need since `useLocalStorage` does that stuff for me.
+
+In short, our codebases ended up being pretty different, but with the same end result, as expected.
